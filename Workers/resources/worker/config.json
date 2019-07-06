@@ -1,0 +1,77 @@
+{
+	"type": "Collection",
+	"properties": {
+		"name": {
+			"name": "name",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "name",
+			"order": 0
+		},
+		"sex": {
+			"name": "sex",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "sex",
+			"order": 1
+		},
+		"salary": {
+			"name": "salary",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "salary",
+			"order": 2
+		},
+		"surname": {
+			"name": "surname",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "surname",
+			"order": 3
+		},
+		"experience": {
+			"name": "experience",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "experience",
+			"order": 4
+		},
+		"age": {
+			"name": "age",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "age",
+			"order": 5
+		},
+		"position": {
+			"name": "position",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "position",
+			"order": 6
+		},
+		"nameTransportOrganization": {
+			"name": "nameTransportOrganization",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "nameTransportOrganization",
+			"order": 7
+		},
+		"patronymic": {
+			"name": "patronymic",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "patronymic",
+			"order": 8
+		}
+	}
+}

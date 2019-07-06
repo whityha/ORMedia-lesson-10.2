@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Изменено</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 class="text-center">ES5</h1>
+
+
+
+    <button class="btn btn-primary" id="addPerson">Добавить рабочего!</button>
+
+    <table id="table-output" >
+    
+      <tr id="tr-1">
+        <td>Имя</td>
+        <td></td>
+      </tr>
+      <tr id="tr-2">
+        <td>Фамилия</td>
+        <td></td>
+      </tr>
+      <tr id="tr-3">
+        <td>Отчество</td>
+        <td></td>
+      </tr>
+       <tr id="tr-4">
+        <td>Пол</td>
+        <td></td>
+      </tr>
+      <tr id="tr-5">
+        <td>Возраст</td>
+        <td></td>
+      </tr>
+      <tr id="tr-6">
+        <td>Стаж</td>
+        <td></td>
+      </tr>
+      <tr id="tr-7">
+        <td>Зарплата</td>
+        <td></td>
+      </tr>
+      <tr id="tr-8">
+        <td>Название организации</td>
+        <td></td>
+      </tr>
+      <tr id="tr-9">
+        <td>Должность</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <button class="btn btn-dark" id="button-table">Закрыть</button>
+        </th>
+      </tr>
+    
+    </table>
+    
+    <!-- используем для того, чтобы не отправлять форму => не обновлять страницу -->
+    <form class="form-employ" id="myForm" onsubmit="return false;">
+    
+      <div class="form-group row">
+    
+        <label class="col-sm-2 form-label">Имя</label>
+        <div class="col-sm-9">
+          <input class="form-control" type="text" id="name" name="name" required pattern="^[a-zA-Zа-яА-Я]+$">
+        </div>
+    
+        <label class="col-sm-2 form-label">Фамилия</label>
+        <div class="col-sm-9">
+          <input class="form-control" type="text" id="surname" name="name" required pattern="^[a-zA-Zа-яА-Я]+$">
+        </div>
+    
+        <label class="col-sm-2 form-label">Отчество</label>
+        <div class="col-sm-9">
+          <input class="form-control" type="text" id="patronymic" name="name" required pattern="^[a-zA-Zа-яА-Я]+$">
+        </div>
+        
+        <label class="col-sm-2 form-label">Пол</label>
+        <div class="col-sm-9">
+          <input class="form-control" type="text" id="sex" name="name" required pattern="^[a-zA-Zа-яА-Я]+$">
+        </div>
+
+        <label class="col-sm-2 form-label">Возраст</label>
+        <div class="col-sm-9">
+          <input type="number" class="form-control" min="16" max="70" id="age" name="age" maxlength="2" required pattern="^[0-9]+$">
+        </div>
+    
+        <label class="col-sm-2 form-label">Стаж</label>
+        <div class="col-sm-9">
+          <input type="number" class="form-control" min="0" max="50" id="experience" maxlength="2" required pattern="^[0-9]+$">
+        </div>
+    
+        <label class="col-sm-2 form-label">Зарплата</label>
+        <div class="col-sm-9">
+          <input type="number" class="form-control" min="10" max="10000" id="salary" maxlength="6" required pattern="^[0-9]+$">
+        </div>
+    
+        <div class="radio">
+          <label><input type="radio" name="radioName" class="first-button" id="industry" value="1">Рабочий индустриального предприятия</label>
+        </div>
+    
+        <div class="radio">
+          <label><input type="radio" name="radioName" class="second-button" id="transport" value="2">Рабочий транспортного предприятия</label>
+        </div>
+    
+        <div class="add-info">
+          <label class="col-sm-2 " id="name-org">Название организации</label>
+          <input class="add-inp" type="text" id="organization" name="name" required>
+
+          <label class="col-sm-2 ">Должность</label>
+          <input class="add-inp" type="text" id="position" name="name" required pattern="^[a-zA-Zа-яА-Я]+$">
+        </div>
+      </div>
+      <button class="btn btn-primary btn-submit" id="button-submit">Отправить</button>
+      <button class="btn btn-primary btn-submit" id="button-edit">Сохранить</button>
+    </form>
+
+
+
+    
+    <table id="table" >
+      <tr>        
+        <th>Имя</th>
+        <th>Фамилия</th>
+        <th>Возраст</th>
+        <th>Должность</th>
+        <th>Тип организации</th>
+        <th>Организация</th>
+        <th>Настройки</th>
+        <th>Узнать подробную информацию</th>
+      </tr>
+    </table>
+    
+
+    <script src="F:/Программирование/ORMedia/lesson 10.2/Workers/node_modules/dpd-clientlib/clib/dpd.js"></script>
+    <script src ="jquery/jquery.min.js"></script>   
+    <script src="js/script.js"></script>
+<!--     <script src='tablesort.min.js'></script>
+
+Include sort types you need
+<script src='tablesort.number.js'></script>
+<script>
+  new Tablesort(document.querySelector('#table'));
+</script> -->
+</body>
+</html>
